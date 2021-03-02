@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.box1{
+    background-color: white;
+}
+.box2{
+    background-color:teal;
+}
+.box3{
+    background-color: turquoise;
+}
+body{
+    background-color: aliceblue;
+}
+main{
+    font-family: 'Noto Sans KR', sans-serif;
+    display:grid;
+    grid-template-columns: repeat(autofit,300px);
+    grid-template-rows: repeat(autofit,500px);
+    grid-template-areas: "box1 box1"
+    "box2 box3";
+    margin: 200px 200px 200px 200px;
+}
+.box1{
+    grid-area: box1;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 50px 50px ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.box2{
+    color:white;
+    grid-area: box2; 
+    padding: 50px 50px 50px 50px ;
+    border-bottom-left-radius: 10px;
+}
+.box3{
+    color:white;
+    grid-area: box3;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 50px 50px ;
+    border-bottom-right-radius: 10px;
+}
+ul{
+    list-style: none;
+}
+.sign{
+    background-color: lime;
+    border-radius: 5px;
+    padding: 14px; 
+    text-align: center;
+}
+#dollar{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.blue{
+    color: teal;
+}
+.green{
+    color:limegreen;
+}
